@@ -1,4 +1,4 @@
-import comket from "../../_dependencies/comket.js"
+import comket from "../../dependencies/comket.js"
 
 export default function Testimonial() {
     let parent = comket.div({

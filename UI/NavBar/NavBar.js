@@ -1,4 +1,4 @@
-import comket from "../_dependencies/comket.js"
+import comket from "../dependencies/comket.js"
 import Search from "./Components/Search.js"
 import Actions from "./Components/Actions.js"
 import Register from "./Components/Register.js"

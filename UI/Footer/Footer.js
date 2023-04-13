@@ -1,4 +1,4 @@
-import comket from "../_dependencies/comket.js"
+import comket from "../dependencies/comket.js"
 
 export default function Footer() {
     let parent = comket.div({
