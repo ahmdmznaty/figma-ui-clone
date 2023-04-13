@@ -1,0 +1,18 @@
+@import url("./NavBar/NavBar.css");
+@import url("./Header/Header.css");
+@import url("./Brands/Brands.css");
+@import url("./Services/Services.css");
+@import url("./Programs/Programs.css");
+@import url("./Tutors/Tutors.css");
+@import url("./Testimonials/Testimonials.css");
+@import url("./Blogs/Blogs.css");
+@import url("./Footer/Footer.css");
+
+*{
+    padding: 0; margin: 0; box-sizing: border-box; font-family: Inter;
+}
+
+@font-face {
+    font-family: Inter;
+    src: url(../fonts/Inter/Inter-VariableFont_slnt\,wght.ttf);
+}
