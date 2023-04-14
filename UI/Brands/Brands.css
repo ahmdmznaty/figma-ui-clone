@@ -1,0 +1,17 @@
+.brands{
+    width: 100%; max-width: 1154px; overflow-y: hidden; overflow-x: auto;
+    display: flex; flex-flow: row nowrap; gap: 55px; padding: 20px;
+    justify-content: flex-start; align-items: center; margin: auto;
+}
+.brands p{
+    display: flex; flex-flow: column nowrap; margin-left: 20px;
+    justify-content: flex-start; align-items: flex-start;
+}
+.brands p mark{
+    background-color: transparent; color: #7F56D9;
+    font-size: 30px; font-weight: 700;
+}
+.brands p span{
+    color: #101828; font-size: 25px; font-weight: 200;
+}
+.brands::-webkit-scrollbar-thumb{background-color: #7f56d942;}
