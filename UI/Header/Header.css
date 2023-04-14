@@ -1,0 +1,185 @@
+.header{
+    width: 100%; height: auto; padding: 20px;
+    display: flex; flex-flow: row-reverse wrap; gap: 4px;
+    justify-content: center; align-items: center;
+}
+.header .details, .header .figure{
+    width: 80%; max-width: 600px; min-width: 280px;
+    aspect-ratio: 1/1; position: relative;
+}
+.header .details h2{ font-size: 64px; font-weight: 700; margin-bottom: 20px; }
+.header .details mark{
+    background-color: transparent; color: #7F56D9;
+}
+.header .details p{
+    font-size: 16px; line-height: 180%; padding-right: 140px; color: #646464;
+    margin-bottom: 36px;
+}
+.header .details .actions{
+    display: flex; flex-flow: row wrap; gap: 28px;
+    justify-content: flex-start; align-items: center;
+    margin-bottom: 50px;
+}
+.header .details .actions button{
+    width: 157px; height: 60px; border: 0; border-radius: 8px;
+    font-size: 18px; font-weight: 500; cursor: pointer; transition: all 0.3s;
+}
+.header .details .actions button:first-child{
+    background-color: #7F56D9; color: #FFFFFF;
+    outline: 4px solid #F4EBFF;
+}
+.header .details .actions button:first-child:hover{
+    background-color: #F4EBFF; color: #7F56D9;
+}
+.header .details .actions button:last-child{
+    background-color: #F4EBFF; color: #7F56D9;
+}
+.header .details .actions button:last-child:hover{
+    background-color: #7F56D9; color: #F4EBFF;
+}
+.header .details .features{
+    display: flex; flex-flow: row wrap; gap: 34px;
+    justify-content: flex-start; align-items: center;
+}
+.header .details .features div{
+    display: flex; flex-flow: row wrap; gap: 10px;
+    justify-content: center; align-items: center;
+}
+@media only screen and (max-width: 1100px) {
+    .header .details h2{ text-align: center; }
+    .header .details p{ text-align: center; padding-right: 0px; }
+    .header .details .actions{ justify-content: center; }
+    .header .details .features{ justify-content: center; }
+}
+@media only screen and (max-width: 780px) {
+    .header .details h2{ font-size: 50px; }
+    .header .details p{
+        font-size: 14px;
+    }
+    .header .details .actions button{
+        width: 120px; height: 50px; font-size: 14px;
+    }
+}
+@media only screen and (max-width: 500px) {
+    .header .details h2{ font-size: 30px; text-align: center; }
+    .header .details p{
+        font-size: 12px;
+    }
+}
+.header .figure::before{
+    content: ""; width: 80%; aspect-ratio: 1/1; border-radius: 50%;
+    border: 1px solid #7F56D9; position: absolute; left: 46.5%; top: 46.5%;
+    transform: translate(-50%, -50%);
+}
+.header .figure::after{
+    content: ""; width: 7%; aspect-ratio: 1/1; border-radius: 50%;
+    background-color: #7F56D9; position: absolute; top: 82%; left: 16%;
+    transform: translate(-50%, -50%);
+}
+.header .figure .image-circle{
+    width: 80%; aspect-ratio: 1/1; border-radius: 50%; overflow: hidden;
+    background-color: #7F56D9; position: absolute; left: 50%; top: 50%;
+    transform: translate(-50%, -50%);
+}
+.header .figure .image-circle img{
+    height: 95%; position: absolute; left: 50%; top: 5%;
+    transform: translate(-50%, 0);
+}
+.header .figure .video-card{
+    aspect-ratio: 215/90; padding: 10px;
+    width: 34%; border-radius: 18px; border: 1px solid #7F56D9;
+    background-color: #F5F5F4; box-shadow: 0 18px 38px 0 #00000022;
+    display: flex; flex-flow: row nowrap; gap: 24px; justify-content: center;
+    align-items: center; position: absolute; top: 40%; left: 12%;
+    transform: translate(-50%, -50%);
+}
+.header .figure .video-card .image-frame{
+    aspect-ratio: 1/1;
+    min-width: 28%; background-color: #7F56D9; border-radius: 12px;
+    display: flex; flex-flow: row nowrap; justify-content: center;
+    align-items: center;
+}
+.header .figure .video-card .image-frame img{ width: 72%; }
+.header .figure .video-card div h4{
+    font-size: 25px; font-weight: 700; color: #101828;
+}
+.header .figure .video-card div p{
+    font-size: 15px; font-weight: 400; color: #101828; opacity: 0.5;
+    white-space: nowrap;
+}
+.header .figure .tutor-card{
+    aspect-ratio: 164/85; padding: 10px;
+    width: 26%; border-radius: 18px; border: 1px solid #7F56D9;
+    background-color: #F5F5F4; box-shadow: 0 18px 38px 0 #00000022;
+    display: flex; flex-flow: row nowrap; gap: 24px; justify-content: center;
+    align-items: center; position: absolute; top: 76%; left: 82%;
+    transform: translate(-50%, -50%);
+}
+.header .figure .tutor-card .image-frame{
+    aspect-ratio: 1/1;
+    min-width: 28%; background-color: #7F56D9; border-radius: 12px;
+    display: flex; flex-flow: row nowrap; justify-content: center;
+    align-items: center;
+}
+.header .figure .tutor-card .image-frame img{ width: 72%; }
+.header .figure .tutor-card div h4{
+    font-size: 25px; font-weight: 700; color: #101828;
+}
+.header .figure .tutor-card div p{
+    font-size: 15px; font-weight: 400; color: #101828; opacity: 0.5;
+    white-space: nowrap;
+}
+.header .figure .online-card{
+    aspect-ratio: 144/189; padding: 10px;
+    width: 24%; border-radius: 18px; border: 1px solid #7F56D9;
+    background-color: #F5F5F4; box-shadow: 0 18px 38px 0 #00000022;
+    display: flex; flex-flow: column nowrap; gap: 24px; top: 23.5%; left: 85%;
+    justify-content: center; align-items: center; position: absolute;
+    transform: translate(-50%, -50%);
+}
+.header .figure .online-card img{ width: 65%; }
+.header .figure .online-card div h4{
+    font-size: 25px; font-weight: 700; color: #101828; text-align: center;
+}
+.header .figure .online-card div p{
+    font-size: 15px; font-weight: 400; color: #101828; opacity: 0.5;
+    white-space: nowrap; text-align: center;
+}
+
+@media only screen and (max-width: 780px) {
+    .header .figure .video-card,
+    .header .figure .tutor-card,
+    .header .figure .online-card{
+        border-radius: 9px;
+    }
+    .header .figure .video-card{ gap: 16px; }
+    .header .figure .video-card .image-frame{ border-radius: 8px; }
+    .header .figure .video-card div h4{ font-size: 19px; }
+    .header .figure .video-card div p{ font-size: 9px; }
+    .header .figure .tutor-card{ gap: 16px; width: 30%; }
+    .header .figure .tutor-card .image-frame{ border-radius: 8px; }
+    .header .figure .tutor-card div h4{ font-size: 19px; }
+    .header .figure .tutor-card div p{ font-size: 9px; }
+    .header .figure .online-card{ gap: 16px; width: 28%; }
+    .header .figure .online-card img{ width: 75%; }
+    .header .figure .online-card div h4{ font-size: 20px; }
+    .header .figure .online-card div p{ font-size: 11px; }
+}
+@media only screen and (max-width: 450px) {
+    .header .figure .video-card,
+    .header .figure .tutor-card,
+    .header .figure .online-card{
+        border-radius: 9px;
+    }
+    .header .figure .video-card{ gap: 5px; }
+    .header .figure .video-card div h4{ font-size: 15px; }
+    .header .figure .video-card div p{ font-size: 6px; }
+    .header .figure .tutor-card{ gap: 5px; width: 32%; }
+    .header .figure .tutor-card .image-frame{ border-radius: 5px; }
+    .header .figure .tutor-card div h4{ font-size: 15px; }
+    .header .figure .tutor-card div p{ font-size: 6px; }
+    .header .figure .online-card{ gap: 5px; width: 32%; }
+    .header .figure .online-card img{ width: 80%; }
+    .header .figure .online-card div h4{ font-size: 15px; }
+    .header .figure .online-card div p{ font-size: 9px; }
+}

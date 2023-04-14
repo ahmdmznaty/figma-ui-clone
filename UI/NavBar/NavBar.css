@@ -1,7 +1,11 @@
 .nav-bar{
     width: 100%; height: 100px; position: sticky; top: 0;
-    display: flex; flex-flow: row nowrap; gap: 92px;
+    display: flex; flex-flow: row nowrap; gap: 92px; z-index: 100;
     justify-content: center; align-items: center; padding: 10px;
+    background-image: linear-gradient(
+        #FFFFFF, #FFFFFF, #FFFFFF,
+        #ffffffed, #ffffffcd, transparent
+    );
 }
 .nav-bar .nav-left{
     display: flex; flex-flow: row nowrap; gap: 30px;
@@ -11,7 +15,9 @@
     display: flex; flex-flow: row nowrap; gap: 20px;
     justify-content: center; align-items: center;
 }
-.nav-bar .nav-left .left-left img{ min-width: 167; }
+.nav-bar .nav-left .left-left img{
+    width: 50%; max-width: 167px; min-width: 140px;
+}
 .nav-bar .nav-left .left-left .search-box{
     width: 367px; height: 44px; border: 1px solid #D0D5DD;
     border-radius: 8px; position: relative;
@@ -62,7 +68,7 @@
 }
 .nav-bar .register .signup:hover{ color: #7F56D9; background-color: #F4EBFF; }
 .nav-bar .responsive-icons{
-    display: flex; flex-flow: row nowrap; gap: 20px;
+    display: flex; flex-flow: row nowrap; gap: 10px;
     justify-content: center; align-items: center;
 }
 .nav-bar .responsive-icons .menu, .nav-bar .responsive-icons .search-icon{
@@ -78,6 +84,7 @@
     .nav-bar .responsive-icons .menu{display: flex;}
 }
 @media only screen and (max-width: 720px) {
+    .nav-bar{ gap: 40px; }
     .nav-bar .nav-left .left-left .search-box{ display: none; }
     .nav-bar .responsive-icons .search-icon{display: flex;}
 }
