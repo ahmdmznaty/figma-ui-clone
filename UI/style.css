@@ -20,6 +20,7 @@
 }
 body{
     overflow-x: hidden; overflow-y: auto;
+    background-color: #24bb8b04;
 }
 
 @font-face {

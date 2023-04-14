@@ -1,0 +1,65 @@
+.services{
+    width: 100%; padding: 47px 20px 20px 20px; margin-top: 70px;
+    display: flex; flex-flow: column nowrap; gap: 12px;
+    justify-content: center; align-items: center;
+    background-color: #FFFFFF;
+}
+.services h3{
+    font-size: 16px; font-weight: 500; color: #6941C6; line-height: 150%;
+}
+.services h4{
+    font-size: 36px; font-weight: 500; color: #101828; line-height: 120%;
+    max-width: 770px; text-align: center;
+}
+.services .cards{
+    margin-top: 28px; display: flex; flex-flow: row wrap; gap: 40px;
+    justify-content: center; align-items: center;
+}
+.services .cards .service-card{
+    width: 373px; height: 243px; border-radius: 12px; padding: 30px 40px;
+    background-color: #FFFFFF; display: flex; flex-flow: column nowrap;
+    justify-content: space-between; align-items: flex-start; gap: 22px;
+    border: 1px solid #d8d8d853; box-shadow: 0 67px 110px 0 rgba(0, 0, 0, 0.05);
+}
+.services .cards .service-card .top{
+    display: flex; flex-flow: row nowrap; gap: 20px;
+    justify-content: flex-start; align-items: center;
+}
+.services .cards .service-card .top div{
+    /*  */
+    width: 46px; height: 46px;
+    border-radius: 10px;
+    display: flex; flex-flow: row nowrap;
+    justify-content: center; align-items: center;
+}
+.services .cards .service-card .top span{
+    font-size: 24px; font-weight: 600; color: #101828; line-height: 150%;
+}
+.services .cards .service-card p{
+    font-size: 16px; font-weight: 400; color: #646464; line-height: 180%;
+}
+.services .cards .service-card button{
+    border: 0; background-color: transparent; text-align: left;
+    font-size: 18px; font-weight: 500; color: #7F56D9;
+    line-height: 140%; cursor: pointer; transition: all 0.3s;
+    display: flex; flex-flow: row nowrap; gap: 18px;
+    justify-content: flex-start; align-items: center;
+}
+.services .cards .service-card button:hover{ gap: 24px; }
+@media only screen and (max-width: 400px) {
+    .services h4{
+        font-size: 25px;
+    }
+    .services .cards .service-card{
+        width: 280px; height: auto;
+    }
+    .services .cards .service-card .top span{
+        font-size: 18px;
+    }
+    .services .cards .service-card p{
+        font-size: 13px; line-height: 140%;
+    }
+    .services .cards .service-card button{
+        font-size: 14px;
+    }
+}
