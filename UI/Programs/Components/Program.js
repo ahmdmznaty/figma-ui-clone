@@ -53,7 +53,7 @@ export default function Program(program) {
                     comket.div({class: "leader", children: [
                         comket.img({
                             src: `./media/programs/${
-                                program.leader.name.split(" ").join("-")
+                                program.leader.name.split(" ").join("-").toLowerCase()
                             }.png`
                         }),
                         comket.div({class: "details", children: [
