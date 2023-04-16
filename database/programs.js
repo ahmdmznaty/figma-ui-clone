@@ -14,7 +14,7 @@ const programs = [
         "leader": {"name": "Jenny Wilson", "enrolled": 2001}
     },
     {
-        "title": "Building User Interface",
+        "title": "Building User Interfaces",
         "description": "Learn how to apply User Experience (UX) principles to your website designs.",
         "rate": 4.2, "reviewers": 125, "category": "Design",
         "time": "01:02:00", "price": 11.70,
