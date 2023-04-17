@@ -1,9 +1,10 @@
 import comket from "../dependencies/comket.js"
+import Copyrights from "./Components/Copyrights.js"
+import Main from "./Components/Main.js"
 
 export default function Footer() {
     let parent = comket.div({
-        text: "Footer"
+        class: "footer", children: [ Main(), Copyrights() ]
     })
-    // working here...
     return parent
 }
