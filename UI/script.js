@@ -15,7 +15,7 @@ document.body.append(
     Services(),
     Programs(),
     Tutors(),
-    Testimonials(),
+    // Testimonials(),
     Blogs(),
     Footer()
 )
